@@ -130,6 +130,7 @@
     a {
         display: flex;
         justify-content: center;
+        align-items: center;
         text-decoration: none;
         color: var(--text-color-primary);
         border: 0.01px solid rgb(167, 167, 167);
