@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header_nav.css">
+    <link rel="stylesheet" href="styles/lab-record.css">
+    <link rel="stylesheet" href="styles/assignment.css">
+    <link rel="stylesheet" href="styles/sheet.css">
+    <link rel="stylesheet" href="styles/testenomials.css">
+    <link rel="stylesheet" href="styles/contact-us.css">
+    <link rel="stylesheet" href="styles/our-mission.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <title>Nowork</title>
+</head>
+
+<body>
+    <!-- navbar menu -->
+    <div class="fixed-navbar">
+        <header class="heebo address">
+            <i class="bi bi-geo-alt-fill"></i>
+            <p>Lab Record, Assignment, and Sheet Complition for Arya College of Engineering</p>
+        </header>
+        <header class="heebo logo-info">
+            <a href="index.html">
+                <h1 class="logo">NoWork</h1>
+            </a>
+            <div class="schedule">
+                <p class="schedule-availability">Available 24/7</p>
+                <button class="schedule-button">SCHEDULE NOW</button>
+            </div>
+        </header>
+        <nav class="heebo menu">
+            <ul class="menu-lists">
+                <a href="#lab-record" onclick="smoothScroll('lab-record', event)">
+                    <li>LAB RECORD</li>
+                </a>
+                <a href="#assignment" onclick="smoothScroll('assignment', event)">
+                    <li>ASSIGNMENT</li>
+                </a>
+                <a href="#sheet" onclick="smoothScroll('sheet', event)">
+                    <li>SHEET</li>
+                </a>
+                <a href="#testenomials" onclick="smoothScroll('testenomials', event)">
+                    <li>TESTONOMIALS</li>
+                </a>
+                <a href="#contact-us" onclick="smoothScroll('contact-us', event)">
+                    <li>CONTACT US</li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- responsive navbar menu -->
+    <div class="mobile-fixed-navbar">
+        <header class="heebo mobile-logo-info">
+            <a href="index.html">
+                <h1 class="logo">NoWork</h1>
+            </a>
+            <i class="toggle-button bi bi-list" onclick="toggle_menu()"></i>
+        </header>
+
+
+        <nav class="heebo mobile-menu ">
+            <ul class="mobile-menu-lists">
+                <a href="#lab-record" onclick="smoothScroll('lab-record', event)">
+                    <li>LAB RECORD</li>
+                </a>
+                <a href="#assignment" onclick="smoothScroll('assignment', event)">
+                    <li>ASSIGNMENT</li>
+                </a>
+                <a href="#sheet" onclick="smoothScroll('sheet', event)">
+                    <li>SHEET</li>
+                </a>
+                <a href="#testenomials" onclick="smoothScroll('testenomials', event)">
+                    <li>TESTONOMIALS</li>
+                </a>
+                <a href="#contact-us" onclick="smoothScroll('contact-us', event)">
+                    <li>CONTACT US</li>
+                </a>
+            </ul>
+        </nav>
+        <button class="mobile-schedule-button">SCHEDULE NOW</button>
+    </div>
+
+    <!-- lab record section -->
+    <section class="lab-record" id="lab-record">
+        <div class="lab-record-text">
+            <h1>Complete Lab Support</h1>
+            <div class="content">
+                <p>Completing lab records can be a challenging and time-consuming task for many engineering students.
+                    With Nowork, you're assured of precise, detailed, and timely documentation of all your lab work. Our
+                    professionals are adept in various disciplines, ensuring that your records meet the highest academic
+                    standards.</p>
+                <p>Collaborating with Nowork not only guarantees completion of your lab records but also enriches
+                    your,comprehension of the subject matter, as we ensure to incorporate educational value in every
+                    entry we draft.</p>
+            </div>
+        </div>
+        <div class="lab-record-image">
+            <img src="material-images/lab-records.webp" alt="Lab Records">
+        </div>
+    </section>
+
+    <!-- assignment section -->
+    <section class="assignment" id="assignment">
+        <div class="assignment-text">
+            <h1>Assignment Mastery</h1>
+            <div class="content">
+                <p>Assignments play a significant role in the learning process, and at Nowork, we provide unparalleled
+                    support to ensure you excel in every task. Our team of experts is equipped to handle assignments
+                    across various engineering fields, delivering projects that align with your curriculum's
+                    requirements.</p>
+                <p>By choosing Nowork for your assignments, you access a support system that emphasizes the importance
+                    of educational achievement, with each completed task bringing you a step closer to academic
+                    excellence.</p>
+            </div>
+        </div>
+        <div class="assignment-image">
+            <img src="material-images/assignments.webp" alt="Assignments">
+        </div>
+    </section>
+
+    <!-- sheet section -->
+    <section class="sheet" id="sheet">
+        <div class="sheet-text">
+            <h1>Flawless Sheets</h1>
+            <div class="content">
+                <p>Our sheet completion service is designed to provide you with error-free, impeccably structured
+                    academic sheets that reflect comprehensive knowledge in your field of study. At Nowork, we
+                    understand the crucial role that well-prepared sheets play in the learning and assessment processes.
+                </p>
+                <p>Reliance on Nowork for sheet completion means tapping into expertise that aids in a better
+                    understanding of the material, ultimately contributing to a stronger academic portfolio for you.</p>
+            </div>
+        </div>
+        <div class="sheet-image">
+            <img src="material-images/sheet.webp" alt="sheet">
+        </div>
+    </section>
+
+    <!-- testenomials section -->
+    <section class="testenomials" id="testenomials">
+        <div class="testenomials-text">
+            <h1>OUR BEST TESTIMONIALS!</h1>
+            <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>
+            <div class="content">
+                <p>"Since partnering with Nowork, I've seen a significant improvement in my lab work and assignments.
+                    Their attention to detail and commitment to quality are unparalleled. Highly recommended for any
+                    student striving for academic success!"</p>
+            </div>
+        </div>
+        <!-- <div class="testenomials-image">
+            <img src="material-images/testenomials.webp" alt="testenomials">
+        </div> -->
+    </section>
+
+    <!-- our-mission section -->
+    <section class="our-mission" id="ourmission">
+        <div class="our-mission-text">
+            <h1>Our Mission</h1>
+            <div class="content">
+                <p>At Nowork, we are staunch advocates for academic growth and stress-free learning. Our service was
+                    born from the recognition of the immense pressure engineering students face to manage multiple tasks
+                    simultaneously.</p>
+                <p>The embodiment of our mission is witnessed through the countless hours of support we've offered,
+                    resulting in higher academic achievements for our clients, and our passion to continue delivering
+                    excellence is what defines Nowork.</p>
+            </div>
+        </div>
+        <div class="our-mission-image">
+            <img src="material-images/our-mission.webp" alt="our-mission">
+        </div>
+    </section>
+
+    <!-- contact-us section -->
+    <section class="contact-us" id="contact-us">
+        <div class="contact-us-text">
+            <div class="content">
+                <h1>Get in Touch</h1>
+                <p>Ready to take the first step towards academic relief? Contact our experts now and sail smoothly
+                    through your coursework!</p>
+            </div>
+        </div>
+        <div class="form">
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="11226086-61ba-48f6-b2a7-b92f08dbc488">
+
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" maxlength="10" required>
+
+                <textarea id="help" name="help" placeholder="What can we help you with?" rows="5" required></textarea>
+
+                <button type="submit">REQUEST SERVICE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer menu -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>NoWork</h3>
+                <p>Empowering your academic journey with expert completion services.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="bi bi-geo-alt-fill"></i> Location: Arya College of Engineering, Jaipur, Rajasthan, India</li>
+                    <li><i class="bi bi-telephone-fill"></i> Phone: +91 83829 37739</li>
+                    <li><i class="bi bi-envelope-fill"></i> Email: mankk2b@gmail.com</li>
+                    <li><i class="bi bi-clock-fill"></i> 24/7 Support</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>All Rights Reserved &copy; 2024</p>
+        </div>
+    </footer>
+
+    <script src="scripts/mobile-menu.js"></script>
+    <script src="scripts/smooth-scroll.js"></script>
+    <script src="scripts/schedule-button.js"></script>
+</body>
+
+</html>

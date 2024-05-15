@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.testenomials {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 80vh;
+    background-image: url("/material-images/testenomials.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .testenomials-text {
+        font-family: "Poppins", sans-serif;
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        border: 2px solid var(--text-color-primary-2);
+        color: var(--text-color-primary);
+        height: 300px;
+        width: 800px;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 0px;
+
+            i {
+                color: var(--text-color-primary);
+                font-size: 1.5rem;
+                color: gold;
+            }
+        }
+
+        .content {
+            p {
+                padding: 10px 0px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .testenomials {
+        height: auto;
+        padding: 20px;
+
+        .testenomials-text {
+            width: 100%;
+            padding: 20px;
+            height: auto;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: var(--text-color-primary);
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .stars {
+                padding: 5px 0px;
+                gap: 5px;
+            }
+
+            .content {
+                p {
+                    padding: 10px 0px;
+                }
+            }
+        }
+    }
+}

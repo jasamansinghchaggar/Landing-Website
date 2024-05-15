@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+.heebo {
+    font-family: "Heebo", sans-serif;
+}
+.fixed-navbar {
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.address {
+    background-color: var(--header-bg-color-primary);
+    color: var(--text-color-primary);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 83px;
+    height: 40px;
+    width: 100vw;
+    font-size: 1rem;
+    font-weight: 500;
+    box-sizing: border-box;
+
+    i {
+        color: var(--header-bg-color-tertiary);
+    }
+}
+
+.logo-info {
+    background-color: var(--header-bg-color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    width: 100vw;
+    padding: 0px 50px;
+    box-sizing: border-box;
+
+    a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: var(--text-color-secondary);
+    }
+
+
+    .schedule {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .schedule-availability {
+            text-align: end;
+            color: var(--text-color-tertiary);
+            font-weight: 700;
+        }
+
+        .schedule-button {
+            height: 40px;
+            width: 176px;
+            border: 1px;
+            border-radius: 4px;
+            background-color: var(--schedule-button-color);
+            color: var(--text-color-primary);
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.menu {
+    position: sticky;
+    background-color: var(--header-bg-color-tertiary);
+    display: flex;
+    height: 56px;
+    width: 100vw;
+    box-sizing: border-box;
+
+    .menu-lists {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 25px;
+        font-weight: 700;
+
+        a {
+            text-decoration: none;
+
+            li {
+                list-style: none;
+                color: var(--text-color-primary);
+            }
+            li:hover {
+                color: var(--text-color-tertiary);
+                transition: 0.5s ease;
+            }
+        }
+    }
+}
+
+.mobile-fixed-navbar {
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.mobile-logo-info {
+    display: flex;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    margin: 0px 20px;
+
+    a {
+        text-decoration: none;
+        color: var(--text-color-secondary);
+    }
+
+    i {
+        font-size: 2rem;
+    }
+}
+
+.mobile-menu-lists {
+    display: none;
+    transition: 1sec ease;
+    background-color: var(--header-bg-color-tertiary);
+
+    a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: var(--text-color-primary);
+        border: 0.01px solid rgb(167, 167, 167);
+        padding: 10px;
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+.mobile-schedule-button {
+    display: none;
+    width: 100vw;
+    height: 40px;
+    border: none;
+    background-color: var(--schedule-button-color);
+    color: var(--text-color-primary);
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+/* responsiveness */
+
+@media screen and (max-width:768px) {
+
+    .address,
+    .logo-info,
+    .menu {
+        display: none;
+    }
+    
+    
+    .mobile-logo-info {
+        display: flex;
+    }
+    
+    .mobile-menu-lists {
+        display: block;
+    }
+    
+    .mobile-menu{
+        display: none;
+    }
+
+    .mobile-schedule-button {
+        display: block;
+    }
+}

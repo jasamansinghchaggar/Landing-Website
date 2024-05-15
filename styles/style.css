@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+    --header-bg-color-primary: #1e3a8a;
+    --header-bg-color-secondary: #ffffff;
+    --header-bg-color-tertiary: #2563eb;
+    --bg-color-primary: #ffffff;
+    --bg-color-seconday: #2564ebb0;
+    --text-color-primary: #ffffff;
+    --text-color-primary-2: #000000;
+    --text-color-secondary: #2563eb;
+    --text-color-tertiary: #1e3a8a;
+    --schedule-button-color: rgb(239, 68, 68, 1);
+    --button-color: rgb(239, 68, 68, 1);
+    --button-color-hover: rgba(239, 68, 68, 0.8);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
