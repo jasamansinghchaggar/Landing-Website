@@ -4,7 +4,7 @@
     box-sizing: border-box;
     width: 100vw;
     height: 80vh;
-    background-image: url("material-images/testenomials.webp");
+    background-image: url("../material-images/testenomials.webp");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
